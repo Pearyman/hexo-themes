@@ -47,7 +47,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  fill: #3E82F7;
+  //fill: #3E82F7;
+	fill: #f9f9f9;
 }
 
 .rhombus {
@@ -74,22 +75,10 @@ svg {
 			<h3>{{ config.subtitle}}</h3>
 		</div>
 	</section>
-
-    <!--
-    <div class="banner-info leftpadding">
-      <h1><p style="font-weight:bold;font-size:48px;">Born to build</p>better enterprise frameworks and apps with Node.js & Koa</h1>
-      <p style="font-size: 22px;">为企业级框架和应用而生</p>
-      <p class="banner-button">
-        <a class="btn btn-primary" href="{{ index_link('/intro/quickstart.html') }}">{{ __('index.getstart') }}</a>
-        <a class="btn btn-secondary" href="https://github.com/eggjs/egg/">GitHub</a>
-      </p>
-    </div>
-    -->
 </div>
 <div class="index-aside">
 {{ partial('partial/aside') }}
 </div>
-<!--{{ partial('partial/footer') }}-->
 
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
@@ -113,7 +102,7 @@ constructor(shape){
 	this.speed = 2 + Math.random() * 6
 	this.vx = (Math.random() * this.speed) - (Math.random() * this.speed)
 	this.vy = (Math.random() * this.speed) - (Math.random() * this.speed)
-	this.radius = 10 + Math.round(Math.random() * 50)
+	this.radius = 10 + Math.round(Math.random() * 10)
 	this.w = $(window).width()
 	this.h = $(window).height()
 	this.x = (this.w-this.radius)/2
@@ -164,16 +153,16 @@ function randomInt(min,max){
 
 
 for(let i=0;i<max;i++){
-particles.push(
-	new Ball( data[randomInt(0,data.length-1)] )
-)
+	particles.push(
+		new Ball( data[randomInt(0,data.length-1)] )
+	)
 }
 
 function update(){
-particles = particles.filter(function(p){
-	return p.move()
-})
-requestAnimationFrame(update.bind(this))
+	particles = particles.filter(function(p){
+		return p.move()
+	})
+	requestAnimationFrame(update.bind(this))
 }
-update()
+	update()
 </script>

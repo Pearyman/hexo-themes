@@ -1,6 +1,6 @@
 <div class="nav" >
   <header>
-    <a href="{{ index_link() }}" class="nav-logo leftpadding p-title" alt="egg">
+    <a href="/" class="nav-logo leftpadding p-title" alt="egg">
       <img src="{{ config.logo }}">
       <span>{{config.title}}</span>
     </a>

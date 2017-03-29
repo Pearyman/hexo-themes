@@ -1,7 +1,7 @@
 <style>
-aside ul li a.active{
-  color: #22ab28;
-}
+  aside ul li a.active{
+    color: #22ab28;
+  }
 </style>
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
@@ -16,9 +16,6 @@ aside ul li a.active{
     {{ body }}
   </div>
 </body>
-<!--
-<script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
--->
 <script>
   // var menu_link = document.querySelectorAll('.menu_link');
   // var cur_link = window.location.pathname;
@@ -29,12 +26,6 @@ aside ul li a.active{
       //menu_link[i].setAttribute('class','active');
     //}
 //  }
-//docsearch({
-  //apiKey: '1561de31a86f79507ea00cdb54ce647c',
-  //indexName: 'eggjs',
-  //inputSelector: '#search-query',
-  // debug: true // Set debug to true if you want to inspect the dropdown
-//});
 
 </script>
 

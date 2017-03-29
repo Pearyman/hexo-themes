@@ -1,8 +1,8 @@
-大家来学:
-  Pearyman是什么: /intro/index.html
-  Egg and Koa: /intro/egg-and-koa.html
-  Get Start: /intro/quickstart.html
-  get Start: /intro/quickstart.html
+教程:
+  Pearyman是什么: /index/index.html
+  Pearyman安装: /index/egg-and-koa.html
+  Pearyman使用: /index/quickstart.html
+  提个issue: 
 # Basics:
 #   Structure: /basics/structure.html
 #   Environment: /basics/env.html
